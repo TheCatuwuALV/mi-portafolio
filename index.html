@@ -11,9 +11,27 @@
 
     <header>
         <div class="logo">5-chan</div>
+        
         <div class="titulo-principal">
             <h1>Ultimas Publicaciones</h1>
         </div>
+
+        <div class="hamburger-icon" id="btnHamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="menu-desplegable" id="menuMovil">
+            <ul>
+                <li class="cerrar-menu" id="btnCerrar">✖ Cerrar</li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tendencias</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Configuración</a></li>
+            </ul>
+        </nav>
+
         <div class="toggle-switch">
             <i class="fa-solid fa-toggle-on"></i> 
         </div>
@@ -22,6 +40,34 @@
     <main class="contenedor-muro">
         
         <div class="columna">
+            <h3 class="titulo-seccion">Tal vez te interesa</h3>
+            
+            <div class="contenedor-scroll">
+                <div class="tarjeta">Publicacion 1</div>
+                <div class="tarjeta">Publicacion 2</div>
+                <div class="tarjeta">Publicacion 3</div>
+                <div class="tarjeta">Publicacion 4</div>
+                <div class="tarjeta">Publicacion 5</div>
+                <div class="tarjeta">Publicacion 6</div>
+                <div class="tarjeta">Publicacion 7</div>
+            </div>
+
+            <article class="post">
+                <h2>Noticia Extra</h2>
+                <p>Contenido adicional.</p>
+                <div class="usuario">
+                    <div class="avatar"><img src="https://i.pravatar.cc/150?img=8" alt="User"></div>
+                    <div class="info">
+                        <span class="nombre">Admin</span>
+                        <span class="fecha">Hoy</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="columna">
+            <h3 class="titulo-seccion">Mejor Valorados</h3>
+
             <article class="post">
                 <h2>Lorem ipsum dolor...</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum inventore delectus doloremque, ex quam nemo soluta ab exercitationem at odit provident omnis fugit. Ipsa enim aperiam possimus aliquam sapiente rem?</p>
@@ -35,23 +81,8 @@
             </article>
 
             <article class="post">
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit voluptatem eveniet commodi laborum quam repellendus, minus omnis totam error laboriosam neque necessitatibus dolorem amet tempora? Quasi fugit dolorem consectetur.</p>
-                <div class="usuario">
-                    <div class="avatar"><img src="https://i.pravatar.cc/150?img=1" alt="User"></div>
-                    <div class="info">
-                        <span class="nombre">Usuario1</span>
-                        <span class="fecha">Introducir fecha</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-
-        <div class="columna">
-            <article class="post">
                 <img src="Resources/5-1200x675.png" class="post-img" alt="Ingresar Imagen">
                 <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos in fugit, quisquam tenetur harum perferendis autem, modi blanditiis minus excepturi voluptates, aspernatur quasi? Vero nulla quidem, quae incidunt corporis iusto!</p>
                 <div class="usuario">
                     <div class="avatar"><img src="https://i.pravatar.cc/150?img=2" alt="User"></div>
                     <div class="info">
@@ -60,19 +91,11 @@
                     </div>
                 </div>
             </article>
-        </div>
-
-        <div class="columna">
-            <article class="post">
-                <img src="Resources/univalle.jpg" class="post-img" alt="Avengers">
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <div class="autor-simple">Hecho x<span class="naranja"> Usuario1</span></div>
-            </article>
-
-            <article class="post">
+            
+             <article class="post">
                 <div class="doble-foto">
-                    <img src="Resources/images.png" alt="Chica">
-                    <img src="Resources/logo2.jpg" alt="Chico">
+                    <img src="Resources/images.png" alt="Logo 1">
+                    <img src="Resources/logo2.jpg" alt="Logo 2">
                 </div>
                 <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -81,28 +104,25 @@
         </div>
 
         <div class="columna">
+            
             <article class="post">
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <p>Lorem ipsum dolor sit amet...</p>
+                <img src="Resources/univalle.jpg" class="post-img" alt="Avengers">
+                <h2>5-Chan una pagina sin filtros....</h2>
+                <div class="autor-simple">Hecho x<span class="naranja"> Admin</span></div>
+                
+                <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #333;"></div>
+
+                <h2>Aun Haciendo esta parte esta parte!!!!</h2>
+                <p>Se vienen cositas en esta parte el dia lunes</p>
                 <div class="usuario">
                     <div class="avatar"><img src="https://i.pravatar.cc/150?img=5" alt="User"></div>
                     <div class="info">
-                        <span class="nombre">usuario4</span>
-                        <span class="fecha">Ayer</span>
+                        <span class="nombre">AdminPage</span>
+                        <span class="fecha">Hoi</span>
                     </div>
                 </div>
             </article>
-            <article class="post">
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <p>Lorem ipsum dolor sit amet...</p>
-                <div class="usuario">
-                    <div class="avatar"><img src="https://i.pravatar.cc/150?img=5" alt="User"></div>
-                    <div class="info">
-                        <span class="nombre">usuario4</span>
-                        <span class="fecha">Ayer</span>
-                    </div>
-                </div>
-            </article>
+
         </div>
 
     </main>
