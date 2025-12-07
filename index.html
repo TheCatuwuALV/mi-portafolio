@@ -3,114 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5-chan Clon</title>
+    <title>5-chan - Mi Portafolio</title>
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <header>
+        <button class="hamburger-btn" id="open-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
         <div class="logo">5-chan</div>
-        <div class="titulo-principal">
-            <h1>Ultimas Publicaciones</h1>
+        
+        <h1>Ultimas Publicaciones</h1>
+
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
         </div>
-        <div class="toggle-switch">
-            <i class="fa-solid fa-toggle-on"></i> 
-        </div>
+
+        <nav class="nav-menu" id="mobile-menu">
+            <ul class="menu-links">
+                <li class="cerrar-menu" id="btnCerrar">✖ Cerrar</li>
+                
+                <li><a href="#" id="btn-inicio">Inicio</a></li>
+                <li><a href="#" id="btn-tendencias">Tendencias</a></li>
+                
+                <li><a href="#" id="btn-config">Configuración</a></li>
+                
+                <li><a href="#" id="btn-acerca">Acerca de mi creador</a></li>
+                
+                <li>
+                    <a href="https://github.com/TheCatuwuALV" target="_blank">
+                        <i class="fa-brands fa-github"></i> Repositorio en GitHub
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="contenedor-muro">
+    <main class="masonry-layout">
         
-        <div class="columna">
-            <article class="post">
-                <h2>Lorem ipsum dolor...</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum inventore delectus doloremque, ex quam nemo soluta ab exercitationem at odit provident omnis fugit. Ipsa enim aperiam possimus aliquam sapiente rem?</p>
-                <div class="usuario">
-                    <div class="avatar"><img src="https://i.pravatar.cc/150?img=1" alt="User"></div>
-                    <div class="info">
-                        <span class="nombre">Usuario1</span>
-                        <span class="fecha">introducir fecha</span>
-                    </div>
+        <article class="card">
+            <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tempor nunc maecenas cras ipsum, lorem massa lacus...</p>
+            <div class="author">
+                <img src="Resources/images.png" alt="Avatar">
+                <div class="author-info">
+                    <span>Andy Josh</span>
+                    <small>30 Noviembre 2021</small>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article class="post">
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit voluptatem eveniet commodi laborum quam repellendus, minus omnis totam error laboriosam neque necessitatibus dolorem amet tempora? Quasi fugit dolorem consectetur.</p>
-                <div class="usuario">
-                    <div class="avatar"><img src="https://i.pravatar.cc/150?img=1" alt="User"></div>
-                    <div class="info">
-                        <span class="nombre">Usuario1</span>
-                        <span class="fecha">Introducir fecha</span>
-                    </div>
+        <article class="card">
+            <img src="Resources/univalle.jpg" alt="Univalle" class="card-img">
+            <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lorem augue elit leo nibh. Laoreet risus iaculis quisque adipisc...</p>
+            <div class="author">
+                <img src="Resources/images.png" alt="Avatar">
+                <div class="author-info">
+                    <span>Andy Josh</span>
+                    <small>30 Noviembre 2021</small>
                 </div>
-            </article>
-        </div>
+            </div>
+        </article>
 
-        <div class="columna">
-            <article class="post">
-                <img src="Resources/5-1200x675.png" class="post-img" alt="Ingresar Imagen">
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos in fugit, quisquam tenetur harum perferendis autem, modi blanditiis minus excepturi voluptates, aspernatur quasi? Vero nulla quidem, quae incidunt corporis iusto!</p>
-                <div class="usuario">
-                    <div class="avatar"><img src="https://i.pravatar.cc/150?img=2" alt="User"></div>
-                    <div class="info">
-                        <span class="nombre">usuario3</span>
-                        <span class="fecha">Introducir fecha</span>
-                    </div>
+        <article class="card">
+            <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tempor nunc maecenas cras ipsum, lorem massa lacus...</p>
+            <div class="author">
+                <img src="Resources/images.png" alt="Avatar">
+                <div class="author-info">
+                    <span>Andy Josh</span>
+                    <small>30 Noviembre 2021</small>
                 </div>
-            </article>
-        </div>
+            </div>
+        </article>
 
-        <div class="columna">
-            <article class="post">
-                <img src="Resources/univalle.jpg" class="post-img" alt="Avengers">
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <div class="autor-simple">Hecho x<span class="naranja"> Usuario1</span></div>
-            </article>
+        <article class="card">
+            <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
+            <span class="author-name">By Andi Josh</span>
+        </article>
 
-            <article class="post">
-                <div class="doble-foto">
-                    <img src="Resources/images.png" alt="Chica">
-                    <img src="Resources/logo2.jpg" alt="Chico">
-                </div>
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="autor-simple">By <span class="naranja">Andy Josh</span></div>
-            </article>
-        </div>
+        <article class="card">
+            <div class="double-img">
+                <img src="Resources/5-1200x675.png" alt="Img 1">
+                <img src="Resources/images.png" alt="Img 2">
+            </div>
+            <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lorem massa lacus...</p>
+            <span class="author-name">By Andy Josh</span>
+        </article>
 
-        <div class="columna">
-            <article class="post">
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <p>Lorem ipsum dolor sit amet...</p>
-                <div class="usuario">
-                    <div class="avatar"><img src="https://i.pravatar.cc/150?img=5" alt="User"></div>
-                    <div class="info">
-                        <span class="nombre">usuario4</span>
-                        <span class="fecha">Ayer</span>
-                    </div>
+        <article class="card">
+            <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tempor nunc maecenas cras ipsum, lorem massa lacus...</p>
+            <div class="author">
+                <img src="Resources/images.png" alt="Avatar">
+                <div class="author-info">
+                    <span>Andy Josh</span>
+                    <small>30 Noviembre 2021</small>
                 </div>
-            </article>
-            <article class="post">
-                <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
-                <p>Lorem ipsum dolor sit amet...</p>
-                <div class="usuario">
-                    <div class="avatar"><img src="https://i.pravatar.cc/150?img=5" alt="User"></div>
-                    <div class="info">
-                        <span class="nombre">usuario4</span>
-                        <span class="fecha">Ayer</span>
-                    </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <h2>Lorem ipsum dolor sit amet, consectetur...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tempor nunc maecenas cras ipsum, lorem massa lacus...</p>
+            <div class="author">
+                <img src="Resources/images.png" alt="Avatar">
+                <div class="author-info">
+                    <span>Andy Josh</span>
+                    <small>30 Noviembre 2021</small>
                 </div>
-            </article>
-        </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <h2>Vestibulum ac diam sit amet quam vehicula...</h2>
+            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+            <div class="author">
+                <img src="Resources/images.png" alt="Avatar">
+                <div class="author-info">
+                    <span>Andy Josh</span>
+                    <small>01 Diciembre 2021</small>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="Resources/5-1200x675.png" alt="Diseño" class="card-img">
+            <h2>Donec rutrum congue leo eget malesuada</h2>
+            <p>Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat.</p>
+            <span class="author-name">By Andy Josh</span>
+        </article>
+
+        <article class="card">
+            <h2>Cras ultricies ligula sed magna dictum porta</h2>
+            <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.</p>
+            <div class="author">
+                <img src="Resources/images.png" alt="Avatar">
+                <div class="author-info">
+                    <span>Andy Josh</span>
+                    <small>02 Diciembre 2021</small>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="double-img">
+                <img src="Resources/univalle.jpg" alt="Img 1">
+                <img src="Resources/images.png" alt="Img 2">
+            </div>
+            <h2>Curabitur non nulla sit amet nisl tempus</h2>
+            <p>Pellentesque in ipsum id orci porta dapibus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+            <div class="author">
+                <img src="Resources/images.png" alt="Avatar">
+                <div class="author-info">
+                    <span>Andy Josh</span>
+                    <small>02 Diciembre 2021</small>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <h2>Quisque velit nisi, pretium ut lacinia in</h2>
+            <p>Elementum id enim. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+            <span class="author-name">By Andy Josh</span>
+        </article>
+
+        <article class="card">
+            <img src="Resources/univalle.jpg" alt="Campus" class="card-img">
+            <h2>Sed porttitor lectus nibh</h2>
+            <p>Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+            <div class="author">
+                <img src="Resources/images.png" alt="Avatar">
+                <div class="author-info">
+                    <span>Andy Josh</span>
+                    <small>03 Diciembre 2021</small>
+                </div>
+            </div>
+        </article>
 
     </main>
 
     <footer>
-        <div class="footer-left">Proyecto Pw1</div>
-        <div class="footer-center">ejemplo@ejemplo.com</div>
+        <div class="footer-links">
+            <span class="onion">.onion ---- .com</span>
+            <span class="email">ccj2032548@est.univalle.edu</span>
+            <div class="icons">
+                <div class="icon-circle"><i class="fa-brands fa-twitter"></i></div>
+                <div class="icon-circle"><i class="fa-brands fa-github"></i></div>
+                <div class="icon-circle" id="btn-perfil-footer">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <div id="article-modal" class="modal-overlay">
+    <div class="modal-content">
+        
+        <button id="close-modal-btn" class="close-modal">
+            <i class="fa-solid fa-arrow-left"></i> Volver al inicio
+        </button>
+
+        <div class="article-header">
+            <h1 id="modal-title">Título del Artículo</h1>
+            
+            <div class="author-modal">
+                <img src="Resources/images.png" alt="Autor" id="modal-author-img">
+                <div class="author-info">
+                    <span id="modal-author-name">Nombre Autor</span>
+                    <small id="modal-date">Fecha</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-container">
+            <img src="" alt="Imagen Principal" id="modal-image">
+        </div>
+
+        <div class="article-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pretium, mi sed id dui sed orci, tempor. Pellentesque egestas odio enim, accumsan, cursus. Fermentum in bibendum aliquet est viverra eu vitae in nibh. Leo, feugiat amet neque, quis. Amet, eget vulputate cursus in eu sit pulvinar et.</p>
+            <p>Nibh at sem viverra pellentesque hac odio duis a. Urna vitae, at ac et rhoncus. Mauris sit accumsan vitae, nibh netus. In elementum pharetra in lacinia nibh. Non est eget egestas eu et purus amet. Vitae aliquam sit tincidunt pellentesque netus suspendisse vulputate.</p>
+        </div>
+
+    </div>
+</div>
 
     <script src="script/script.js"></script>
 </body>
