@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5-chan - Mi Portafolio</title>
+    <title>Tendencias - 5-chan</title>
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -17,7 +17,7 @@
 
         <div class="logo">5-chan</div>
         
-        <h1>Ultimas Publicaciones</h1>
+        <h1>Tendencias de 5-chan!!!</h1>
 
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
@@ -29,16 +29,15 @@
         <nav class="nav-menu" id="mobile-menu">
             <ul class="menu-links">
                 <li class="cerrar-menu" id="btnCerrar">✖ Cerrar</li>
-                <li><a href="#" id="btn-inicio">Inicio</a></li>
-                <li><a href="tendencias.html" id="btn-tendencias">Tendencias</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tendencias.html" style="color: var(--accent-color); font-weight: bold;">Tendencias</a></li>
                 <li><a href="#" id="btn-config">Configuración</a></li>
                 <li><a href="#" id="btn-acerca">Acerca de mi creador</a></li>
-                
-                </ul>
+            </ul>
         </nav>
     </header>
 
-    <main class="masonry-layout" id="posts-container"></main>
+    <main class="masonry-layout" id="trends-container"></main>
 
     <footer>
         <div class="footer-links">
@@ -46,15 +45,11 @@
                 <i class="fa-solid fa-pen-to-square"></i> Publicar Artículo
             </a>
 
-            <span class="email">ejemplo@ejemplo.com</span>
+            <span class="email">Top posts de la comunidad</span>
             
             <div class="icons">
                 <div class="icon-circle"><i class="fa-brands fa-twitter"></i></div>
-                
-                <a href="https://github.com/TheCatuwuALV" target="_blank" style="text-decoration: none; color: inherit;">
-                    <div class="icon-circle"><i class="fa-brands fa-github"></i></div>
-                </a>
-
+                <div class="icon-circle"><i class="fa-brands fa-github"></i></div>
                 <div class="icon-circle" id="btn-perfil-footer">
                     <i class="fa-solid fa-user"></i>
                 </div>
@@ -64,38 +59,28 @@
 
     <div id="article-modal" class="modal-overlay">
         <div class="modal-content">
-            
-            <button id="close-modal-btn" class="close-modal">
-                <i class="fa-solid fa-arrow-left"></i> Volver
-            </button>
-
+            <button id="close-modal-btn" class="close-modal"><i class="fa-solid fa-arrow-left"></i> Volver</button>
             <div class="article-header">
-                <h1 id="modal-title">Título del Artículo</h1>
-                
+                <h1 id="modal-title">Título</h1>
                 <div class="author-modal" id="modal-author-container">
                     <img src="Resources/images.png" alt="Autor" id="modal-author-img">
                     <div class="author-info">
-                        <span id="modal-author-name">Nombre Autor</span>
+                        <span id="modal-author-name">Nombre</span>
                         <small id="modal-date">Fecha</small>
                     </div>
                 </div>
             </div>
-
-            <div class="article-image-container">
-                <img src="" alt="Imagen Principal" id="modal-image">
-            </div>
-
+            <div class="article-image-container"><img src="" id="modal-image"></div>
             <div class="article-body"></div>
-
+            
             <div class="comments-section">
                 <h3>Comentarios</h3>
                 <div class="comment-box">
-                    <textarea id="comment-input" placeholder="¿Qué opinas sobre esto?" rows="3"></textarea>
+                    <textarea id="comment-input" placeholder="¿Qué opinas?" rows="3"></textarea>
                     <button id="btn-comment-submit" class="btn-pill" style="background: var(--accent-color); color: white; border: none; align-self: flex-end; margin-top: 10px;">Comentar</button>
                 </div>
                 <div id="comments-list"></div>
             </div>
-
         </div>
     </div>
 

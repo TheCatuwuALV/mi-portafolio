@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Publicación - 5-chan</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/crear.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="create-page">
+
+    <header>
+        <button class="hamburger-btn" id="open-menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">5-chan</div>
+        <h1>Nueva Publicación</h1>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+        <nav class="nav-menu" id="mobile-menu">
+            <ul class="menu-links">
+                <li class="cerrar-menu" id="btnCerrar">✖ Cerrar</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tendencias.html">Tendencias</a></li>
+                <li><a href="#" id="btn-config">Configuración</a></li>
+                <li><a href="#" id="btn-acerca">Acerca de mi creador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="create-container-wrapper">
+        <div class="editor-wrapper">
+            
+            <form id="create-form">
+                <div class="input-group title-group">
+                    <input type="text" id="post-title" placeholder="Título*" maxlength="300" required>
+                    <span class="char-count">0/300</span>
+                </div>
+
+                <div id="content-text-area" class="content-area">
+                    <div class="toolbar">
+                        <button type="button"><i class="fa-solid fa-bold"></i></button>
+                        <button type="button"><i class="fa-solid fa-italic"></i></button>
+                        <button type="button"><i class="fa-solid fa-link"></i></button>
+                    </div>
+                    <textarea id="post-body" placeholder="Cuerpo del texto (opcional)"></textarea>
+                </div>
+
+                <div class="image-section">
+                    <div class="upload-box" id="upload-trigger">
+                        <p><i class="fa-solid fa-image"></i> Agregar una imagen (Opcional)</p>
+                        <input type="file" id="post-file" accept="image/*" hidden>
+                    </div>
+                    
+                    <div id="preview-container" style="display: none; position: relative;">
+                        <img id="preview-img" src="">
+                        <button type="button" id="remove-img-btn">✕</button>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button type="button" class="btn-cancel" onclick="window.location.href='index.html'">Cancelar</button>
+                    <button type="submit" class="btn-post">Publicar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <span class="onion">Modo Creación</span>
+            <span class="email">ccj2032548@est.univalle.edu</span>
+            <div class="icons">
+                <div class="icon-circle"><i class="fa-brands fa-twitter"></i></div>
+                <a href="https://github.com/TheCatuwuALV" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="icon-circle"><i class="fa-brands fa-github"></i></div>
+                </a>
+                <div class="icon-circle" id="btn-perfil-footer">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="article-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-modal-btn" class="close-modal">Volver</button>
+            <div class="article-header">
+                <h1 id="modal-title">Título</h1>
+                <div class="author-modal" id="modal-author-container">
+                    <img src="Resources/images.png" id="modal-author-img">
+                    <div class="author-info">
+                        <span id="modal-author-name">Nombre</span>
+                        <small id="modal-date">Fecha</small>
+                    </div>
+                </div>
+            </div>
+            <div class="article-image-container"><img id="modal-image" style="display: none;"></div>
+            <div class="article-body"></div>
+        </div>
+    </div>
+
+    <script src="script/crear.js"></script>
+</body>
+</html>
